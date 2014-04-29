@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-package sample.simple.service;
+package com.qkyrie.spring.examples.caching;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-public class HelloWorldService {
-
-	@Value("${name:World}")
-	private String name;
-
-	public String getHelloMessage() {
-		return "Hello " + this.name;
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
+public class JpaApplication {
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(JpaApplication.class, args);
 	}
-
 }

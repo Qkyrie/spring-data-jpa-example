@@ -1,18 +1,11 @@
 buildscript {
-	ext {
-		springBootVersion = '1.0.0.BUILD-SNAPSHOT'
-	}
-	repositories {
-		// NOTE: You should declare only repositories that you need here
-		mavenLocal()
-		mavenCentral()
-		maven { url "http://repo.spring.io/release" }
-		maven { url "http://repo.spring.io/milestone" }
-		maven { url "http://repo.spring.io/snapshot" }
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    repositories {
+        maven { url "http://repo.spring.io/libs-milestone" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.2.RELEASE")
+    }
 }
 
 apply plugin: 'java'
@@ -30,19 +23,18 @@ run {
 }
 
 repositories {
-	// NOTE: You should declare only repositories that you need here
-	mavenLocal()
-	mavenCentral()
-	maven { url "http://repo.spring.io/release" }
-	maven { url "http://repo.spring.io/milestone" }
-	maven { url "http://repo.spring.io/snapshot" }
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-milestone" }
+    maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
 }
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter")
-	testCompile("org.springframework.boot:spring-boot-starter-test")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("com.h2database:h2")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.apache.commons:commons-lang3:3.0")
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '1.6'
+	gradleVersion = '1.11'
 }
