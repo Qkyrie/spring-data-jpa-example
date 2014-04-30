@@ -25,7 +25,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @ComponentScan
 public class JpaApplication {
+
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(JpaApplication.class, args);
-	}
+        SpringApplication.run(JpaApplication.class, args);
+    }
 }

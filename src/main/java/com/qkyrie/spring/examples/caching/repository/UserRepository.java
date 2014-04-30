@@ -2,7 +2,6 @@ package com.qkyrie.spring.examples.caching.repository;
 
 import com.qkyrie.spring.examples.caching.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.query.Param;
 
 /**
  * User: Quinten
@@ -12,5 +11,4 @@ import org.springframework.data.repository.query.Param;
  * @author Quinten De Swaef
  */
 public interface UserRepository extends JpaRepository<User, Long>{
-    User findUserByNameAndPassword(@Param("name") String name, @Param("password") String password);
 }
