@@ -1,7 +1,7 @@
-package com.qkyrie.spring.examples.caching.producer;
+package com.qkyrie.spring.examples.datajpa.user.producer;
 
-import com.qkyrie.spring.examples.caching.model.User;
-import com.qkyrie.spring.examples.caching.service.UserService;
+import com.qkyrie.spring.examples.datajpa.user.model.User;
+import com.qkyrie.spring.examples.datajpa.user.service.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

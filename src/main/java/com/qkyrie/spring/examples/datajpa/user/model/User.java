@@ -1,4 +1,4 @@
-package com.qkyrie.spring.examples.caching.model;
+package com.qkyrie.spring.examples.datajpa.user.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

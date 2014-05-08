@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.qkyrie.spring.examples.caching;
+package com.qkyrie.spring.examples.datajpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -24,9 +24,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-public class JpaApplication {
+public class UserConfiguration {
 
 	public static void main(String[] args) throws Exception {
-        SpringApplication.run(JpaApplication.class, args);
+        SpringApplication.run(UserConfiguration.class, args);
     }
 }
