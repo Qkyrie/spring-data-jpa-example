@@ -1,15 +1,19 @@
 package com.qkyrie.spring.examples.datajpa.user.repository;
 
-import com.qkyrie.spring.examples.datajpa.AbstractRepositoryTest;
 import com.qkyrie.spring.examples.datajpa.UserConfiguration;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.fest.assertions.Assertions.assertThat;
 
 @SpringApplicationConfiguration(classes = UserConfiguration.class)
-public class UserRepositoryTest extends AbstractRepositoryTest{
+@RunWith(SpringJUnit4ClassRunner.class)
+@Transactional
+public class UserRepositoryTest {
 
     @Autowired
     private UserRepository userRepository;
