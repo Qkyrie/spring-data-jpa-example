@@ -1,5 +1,6 @@
 package com.qkyrie.spring.examples.datajpa.user.configuration;
 
+import com.qkyrie.spring.examples.datajpa.UserConfiguration;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
