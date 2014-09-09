@@ -1,6 +1,6 @@
-package com.qkyrie.spring.examples.datajpa.user.repository;
+package com.deswaef.spring.examples.datajpa.user.repository;
 
-import com.qkyrie.spring.examples.datajpa.user.model.User;
+import com.deswaef.spring.examples.datajpa.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

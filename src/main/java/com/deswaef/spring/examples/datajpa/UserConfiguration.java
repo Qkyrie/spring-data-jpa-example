@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.qkyrie.spring.examples.datajpa;
+package com.deswaef.spring.examples.datajpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

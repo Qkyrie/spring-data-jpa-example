@@ -1,7 +1,7 @@
-package com.qkyrie.spring.examples.datajpa.user.service;
+package com.deswaef.spring.examples.datajpa.user.service;
 
-import com.qkyrie.spring.examples.datajpa.user.model.User;
-import com.qkyrie.spring.examples.datajpa.user.repository.UserRepository;
+import com.deswaef.spring.examples.datajpa.user.model.User;
+import com.deswaef.spring.examples.datajpa.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

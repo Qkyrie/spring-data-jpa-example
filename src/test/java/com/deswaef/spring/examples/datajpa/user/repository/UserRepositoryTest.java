@@ -1,6 +1,6 @@
-package com.qkyrie.spring.examples.datajpa.user.repository;
+package com.deswaef.spring.examples.datajpa.user.repository;
 
-import com.qkyrie.spring.examples.datajpa.UserConfiguration;
+import com.deswaef.spring.examples.datajpa.UserConfiguration;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
